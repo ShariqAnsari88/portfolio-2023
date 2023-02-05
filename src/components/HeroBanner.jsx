@@ -35,7 +35,7 @@ const HeroBanner = () => {
                 {/* NAVBAR END */}
 
                 {/* BIG HEADING START */}
-                <div className="flex justify-center text-center mt-10 md:mt-14 mb-10">
+                <div className="flex justify-center text-center mt-14 mb-10">
                     <h1 className="text-[50px] md:text-[120px] 2xl:text-[189px] leading-[50px] md:leading-[125px]  2xl:leading-[192px] font-oswald uppercase">
                         I Am A Creative
                         <br className="invisible md:visible" />
@@ -60,7 +60,7 @@ const HeroBanner = () => {
                 {/* INTRO END */}
 
                 {/* NUMBER BLOCK START */}
-                <div className="invisible md:visible flex gap-8 relative z-10">
+                <div className="hidden md:flex gap-8 relative z-10">
                     {/* START */}
                     <div className="flex items-center gap-3">
                         <div className="text-[80px] font-light">10+</div>
