@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* font-family: "Oswald", sans-serif; */
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.movingBackground {
+    background: linear-gradient(135deg, #465bdc, #341729, #652520);
+    background-size: 600% 600%;
+
+    -webkit-animation: backgroundAnimation 59s ease infinite;
+    -moz-animation: backgroundAnimation 59s ease infinite;
+    animation: backgroundAnimation 59s ease infinite;
+}
+
+@-webkit-keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 5%;
+    }
+    50% {
+        background-position: 100% 96%;
+    }
+    100% {
+        background-position: 0% 5%;
+    }
+}
+@-moz-keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 5%;
+    }
+    50% {
+        background-position: 100% 96%;
+    }
+    100% {
+        background-position: 0% 5%;
+    }
+}
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 5%;
+    }
+    50% {
+        background-position: 100% 96%;
+    }
+    100% {
+        background-position: 0% 5%;
+    }
+}
