@@ -88,7 +88,7 @@ const HeroBanner = () => {
                 {/* NUMBER BLOCK END */}
 
                 {/* PERSON BLOCK START */}
-                <div className="w-[260px] md:w-[360px] 2xl:w-[475px] absolute bottom-0 left-[50%] -translate-x-1/2">
+                <div className="w-[300px] md:w-[360px] 2xl:w-[475px] absolute bottom-0 left-[50%] -translate-x-1/2">
                     <img src={man} alt="" />
 
                     {/* HIRE ME BUTTON START */}
