@@ -96,6 +96,17 @@
     position: absolute;
     filter: blur(3.5px);
 }
+.text-gradient {
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0.62) 106.5%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
 
 /* sm */
 @media screen and (min-width: 640px) {
