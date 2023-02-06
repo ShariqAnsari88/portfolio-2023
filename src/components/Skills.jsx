@@ -2,6 +2,10 @@ import React from "react";
 
 import Wrapper from "./Wrapper";
 import SkillIcon from "./SkillIcon";
+import Service from "./Service";
+import Portfolio from "./Portfolio";
+
+// IMAGES
 import sk1 from "../assets/sk-1.png";
 import sk2 from "../assets/sk-2.png";
 import sk3 from "../assets/sk-3.png";
@@ -14,7 +18,6 @@ import sk9 from "../assets/sk-9.png";
 import sk10 from "../assets/sk-10.png";
 import sk11 from "../assets/sk-11.png";
 import pattern from "../assets/heading-pattern.png";
-import Service from "./Service";
 
 const Skills = () => {
     return (
@@ -92,7 +95,7 @@ const Skills = () => {
                     {/* SERVICES END */}
 
                     {/* SECTION HEADING START */}
-                    <div className="flex flex-wrap justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-10 md:mb-0">
+                    <div className="flex flex-wrap justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
                         <span>Solving</span>
                         <span>Problems</span>
                         <span className="flex items-center gap-2">
@@ -114,6 +117,8 @@ const Skills = () => {
                     {/* SECTION HEADING END */}
                 </div>
                 {/* SERVICES SECTION END */}
+
+                <Portfolio />
             </Wrapper>
         </div>
     );

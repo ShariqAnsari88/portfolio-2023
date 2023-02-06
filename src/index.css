@@ -84,12 +84,14 @@
     );
     filter: blur(212px);
 }
+
 .sec-2-p-e-1 {
     width: 78px;
     right: -40px;
     top: 0;
     position: absolute;
 }
+
 .sec-2-p-e-2 {
     width: 93px;
     top: 375px;
@@ -97,6 +99,7 @@
     position: absolute;
     filter: blur(3.5px);
 }
+
 .text-gradient {
     background: linear-gradient(
         180deg,
@@ -122,14 +125,14 @@
         top: 417px;
     }
     .sec-2-p-e-1 {
-        width: 218px;
+        width: 180px;
         top: -21px;
         right: -50px;
     }
     .sec-2-p-e-2 {
-        width: 212px;
+        width: 170px;
         left: 750px;
-        top: 300px;
+        top: 350px;
     }
 }
 
@@ -144,10 +147,12 @@
 /* 2xl */
 @media screen and (min-width: 1536px) {
     .sec-2-p-e-1 {
+        width: 218px;
         top: -21px;
         right: -50px;
     }
     .sec-2-p-e-2 {
+        width: 212px;
         left: 1067px;
         top: 428px;
     }
