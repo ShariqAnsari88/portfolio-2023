@@ -26,47 +26,48 @@
     box-sizing: border-box;
 }
 
-.movingBackground {
-    background: linear-gradient(135deg, #465bdc, #341729, #652520);
-    background-size: 600% 600%;
-
-    -webkit-animation: backgroundAnimation 59s ease infinite;
-    -moz-animation: backgroundAnimation 59s ease infinite;
-    animation: backgroundAnimation 59s ease infinite;
+.sec-1-bg-gradient-1-desktop {
+    background: linear-gradient(
+        236.22deg,
+        #ff3c47 -3.32%,
+        #eec850 12.21%,
+        #3257ed 73.4%
+    );
+    border: 122px solid #d21655;
+    filter: blur(187px);
 }
 
-@-webkit-keyframes backgroundAnimation {
-    0% {
-        background-position: 0% 5%;
-    }
-    50% {
-        background-position: 100% 96%;
-    }
-    100% {
-        background-position: 0% 5%;
-    }
+.sec-1-bg-gradient-2-desktop {
+    background: linear-gradient(
+        90deg,
+        #e65300 7.99%,
+        #e7af00 47.79%,
+        #006be9 86.72%
+    );
+    border: 122px solid #d21655;
+    filter: blur(187px);
 }
-@-moz-keyframes backgroundAnimation {
-    0% {
-        background-position: 0% 5%;
-    }
-    50% {
-        background-position: 100% 96%;
-    }
-    100% {
-        background-position: 0% 5%;
-    }
+
+.sec-1-bg-gradient-1-mobile {
+    background: linear-gradient(
+        236.22deg,
+        #ff3c47 -3.32%,
+        #eec850 12.21%,
+        #3257ed 73.4%
+    );
+    border: 122px solid #d21655;
+    filter: blur(187px);
 }
-@keyframes backgroundAnimation {
-    0% {
-        background-position: 0% 5%;
-    }
-    50% {
-        background-position: 100% 96%;
-    }
-    100% {
-        background-position: 0% 5%;
-    }
+
+.sec-1-bg-gradient-2-mobile {
+    background: linear-gradient(
+        90deg,
+        #e65300 7.99%,
+        #e7af00 47.79%,
+        #006be9 86.72%
+    );
+    border: 122px solid #d21655;
+    filter: blur(187px);
 }
 
 .sec-2-bg-gradient {

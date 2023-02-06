@@ -7,10 +7,20 @@ import gmailIcon from "../assets/email-icon.png";
 
 const HeroBanner = () => {
     return (
-        <div className="w-full h-[100vh] movingBackground relative">
+        <div className="w-full h-[100vh] relative bg-[#111111] overflow-hidden">
+            {/* BACKGROUND ELEMENTS FOR DESKTOP START */}
+            <span className="hidden md:block sec-1-bg-gradient-1-desktop md:w-[1120px] 2xl:w-[1420px] md:h-[1119px] 2xl:h-[1419px] absolute md:left-[1000px] 2xl:left-[1309px] -top-[709px]" />
+            <span className="hidden md:block sec-1-bg-gradient-2-desktop md:w-[1120px] 2xl:w-[1420px] md:h-[1119px] 2xl:h-[1419px] absolute left-[105px] top-[672px] md:top-[500px] 2xl:top-[672px]" />
+            {/* BACKGROUND ELEMENTS FOR DESKTOP END */}
+
+            {/* BACKGROUND ELEMENTS FOR DESKTOP START */}
+            <span className="md:hidden sec-1-bg-gradient-1-mobile absolute w-[212px] h-[211px] left-[285px] -top-[25px]" />
+            <span className="md:hidden sec-1-bg-gradient-2-mobile absolute w-[636px] h-[635px] -left-[334px] top-[672px]" />
+            {/* BACKGROUND ELEMENTS FOR DESKTOP END */}
+
             <Wrapper>
                 {/* NAVBAR START */}
-                <div className="hidden md:flex items-center justify-between mt-[40px] 2xl:mt-[63px]">
+                <div className="hidden md:flex items-center justify-between mt-[40px] 2xl:mt-[63px] relative">
                     <div className="flex items-center gap-[6px]">
                         <div className="w-[35px] h-[35px] rounded-full bg-[#252525] flex justify-center items-center">
                             <img src={gmailIcon} alt="" className="w-[18px]" />
@@ -35,7 +45,7 @@ const HeroBanner = () => {
                 {/* NAVBAR END */}
 
                 {/* BIG HEADING START */}
-                <div className="flex justify-center text-center mt-14 mb-10">
+                <div className="flex justify-center text-center mt-14 mb-10 relative">
                     <h1 className="text-[50px] md:text-[120px] 2xl:text-[189px] leading-[50px] md:leading-[125px]  2xl:leading-[192px] font-oswald uppercase">
                         I Am A Creative
                         <br className="invisible md:visible" />
@@ -45,7 +55,7 @@ const HeroBanner = () => {
                 {/* BIG HEADING END */}
 
                 {/* INTRO START */}
-                <div className="flex flex-col mb-10 text-center md:text-left text-[16px] md:text-[18px] leading-[24px] md:leading-[28px]">
+                <div className="flex flex-col mb-10 text-center md:text-left text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] relative">
                     <div className="font-light mb-4">
                         👋 Hi, I Am{" "}
                         <span className="font-semibold">John Doe</span>
