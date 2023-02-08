@@ -31,11 +31,12 @@ const Portfolio = () => {
             </div>
             {/* SECTION HEADING END */}
 
-            <div className="flex justify-center gap-[10px] mb-[50px]">
+            {/* FILTER TAGS START */}
+            <div className="flex justify-start md:justify-center gap-[10px] mb-[50px] overflow-auto">
                 {filters.map((item, index) => (
                     <div
                         key={index}
-                        className={`bg-[#252525] rounded-lg py-[10px] px-[17px] text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] cursor-pointer ${
+                        className={`bg-[#252525] rounded-lg py-[10px] px-[17px] text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] cursor-pointer whitespace-nowrap ${
                             selectedTag === item.id
                                 ? "bg-[#EFB946] text-black"
                                 : ""
@@ -46,8 +47,10 @@ const Portfolio = () => {
                     </div>
                 ))}
             </div>
+            {/* FILTER TAGS START */}
 
-            <div className="grid grid-cols-3 gap-5">
+            {/* PROJECTS GRID START */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {projectData.map((item, index) => {
                     return (
                         <div key={index} className="flex flex-col gap-4">
@@ -57,13 +60,14 @@ const Portfolio = () => {
                                     className="transition-transform hover:-translate-y-[69%] duration-5000 ease-linear"
                                 />
                             </div>
-                            <div className="text-[20px] 2xl:text-[34px] text-[#CCCCCC]">
+                            <div className="text-[20px] 2xl:text-[34px] text-[#CCCCCC] text-center">
                                 {item.name}
                             </div>
                         </div>
                     );
                 })}
             </div>
+            {/* PROJECTS GRID START */}
         </div>
     );
 };
