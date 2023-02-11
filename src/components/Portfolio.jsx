@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { projects, filters } from "../projectData";
+import { projects, filters } from "../data";
 
 const Portfolio = () => {
     const [selectedTag, setSelectedTag] = useState("all");
@@ -50,10 +50,13 @@ const Portfolio = () => {
             {/* FILTER TAGS START */}
 
             {/* PROJECTS GRID START */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {projectData.map((item, index) => {
                     return (
-                        <div key={index} className="flex flex-col gap-4">
+                        <div
+                            key={index}
+                            className="flex flex-col gap-4 cursor-pointer"
+                        >
                             <div className="bg-black rounded-[20px] aspect-video overflow-hidden">
                                 <img
                                     src={item.image}

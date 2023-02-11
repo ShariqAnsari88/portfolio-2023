@@ -4,6 +4,7 @@ import Wrapper from "./Wrapper";
 import SkillIcon from "./SkillIcon";
 import Service from "./Service";
 import Portfolio from "./Portfolio";
+import Achievements from "./Achievements";
 
 // IMAGES
 import sk1 from "../assets/sk-1.png";
@@ -119,6 +120,7 @@ const Skills = () => {
                 {/* SERVICES SECTION END */}
 
                 <Portfolio />
+                <Achievements />
             </Wrapper>
         </div>
     );
