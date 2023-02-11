@@ -22,7 +22,9 @@ import pattern from "../assets/heading-pattern.png";
 
 const Skills = () => {
     return (
-        <div className="bg-[#111111] py-[50px] md:py-[100px]">
+        <div className="bg-[#111111] py-[50px] md:py-[100px] relative overflow-hidden">
+            <div className="sec-3-bg-gradient-1" />
+            <div className="sec-3-bg-gradient-2" />
             <Wrapper>
                 {/* SKILL ICONS START */}
                 <div className="grid grid-cols-4 gap-3 md:grid-cols-11">
@@ -41,7 +43,7 @@ const Skills = () => {
                 {/* SKILL ICONS END */}
 
                 {/* SERVICES SECTION START */}
-                <div className="flex items-end justify-between flex-wrap-reverse py-[50px] md:py-[100px]">
+                <div className="flex items-end justify-between flex-wrap-reverse py-[50px] md:py-[100px] relative">
                     {/* SERVICES START */}
                     <div className="md:max-w-[65%] flex flex-col gap-6 md:gap-10">
                         <Service

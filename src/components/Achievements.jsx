@@ -6,7 +6,7 @@ import dashedCircle from "../assets/dashed-circle.svg";
 
 const Achievements = () => {
     return (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-[15px] md:gap-[25px] 2xl:gap-[50px] mt-[75px] md:mt-[150px]">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-[15px] md:gap-[25px] 2xl:gap-[50px] mt-[75px] md:mt-[150px] relative">
             {achievements.map((item) => (
                 <div
                     key={item.id}
