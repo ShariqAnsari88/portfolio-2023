@@ -1,0 +1,34 @@
+.carousel .control-arrow {
+    width: 34px;
+    height: 34px;
+    top: 50% !important;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel .control-prev.control-arrow:before {
+    border-right: 8px solid #000;
+}
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid #000;
+}
+.carousel .control-prev {
+    left: 25px !important;
+}
+.carousel .control-next {
+    right: 25px !important;
+}
+.carousel .carousel-status {
+    text-shadow: none;
+    color: #aaaaaa;
+    padding: 20px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel .control-arrow {
+        display: none;
+    }
+}

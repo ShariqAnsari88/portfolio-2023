@@ -1,6 +1,7 @@
 import HeroBanner from "./components/HeroBanner";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
+import Testimonials from "./components/Testimonials";
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <HeroBanner />
             <AboutMe />
             <Skills />
+            <Testimonials />
         </div>
     );
 }
