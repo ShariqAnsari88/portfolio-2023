@@ -18,7 +18,7 @@ const Portfolio = () => {
     };
 
     return (
-        <div className="mt-10 relative">
+        <div id="work" className="mt-10 relative">
             {/* SECTION HEADING START */}
             <div className="mb-10">
                 <div className="flex text-center justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-2">
@@ -50,7 +50,7 @@ const Portfolio = () => {
             {/* FILTER TAGS START */}
 
             {/* PROJECTS GRID START */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {projectData.map((item, index) => {
                     return (
                         <div
@@ -60,7 +60,7 @@ const Portfolio = () => {
                             <div className="bg-black rounded-[20px] aspect-video overflow-hidden">
                                 <img
                                     src={item.image}
-                                    className="transition-transform hover:-translate-y-[69%] duration-5000 ease-linear"
+                                    className="transition-transform hover:-translate-y-[25%] hover:duration-2500 ease-linear"
                                 />
                             </div>
                             <div className="text-[20px] 2xl:text-[34px] text-[#CCCCCC] text-center">

@@ -4,10 +4,14 @@ import Wrapper from "./Wrapper";
 import man from "../assets/man.png";
 import externalLinkIcon from "../assets/external-link-icon.png";
 import gmailIcon from "../assets/email-icon.png";
+import { scrollTo } from "../helper";
 
 const HeroBanner = () => {
     return (
-        <div className="w-full h-[100vh] relative bg-[#111111] overflow-hidden">
+        <div
+            id="hero"
+            className="w-full h-[100vh] relative bg-[#111111] overflow-hidden"
+        >
             {/* BACKGROUND ELEMENTS FOR DESKTOP START */}
             <span className="hidden md:block sec-1-bg-gradient-1-desktop md:w-[1120px] 2xl:w-[1420px] md:h-[1119px] 2xl:h-[1419px] absolute md:left-[1000px] 2xl:left-[1309px] -top-[709px]" />
             <span className="hidden md:block sec-1-bg-gradient-2-desktop md:w-[1120px] 2xl:w-[1420px] md:h-[1119px] 2xl:h-[1419px] absolute left-[105px] top-[672px] md:top-[500px] 2xl:top-[672px]" />
@@ -28,16 +32,28 @@ const HeroBanner = () => {
                         <div>jsdev@gmail.com</div>
                     </div>
                     <ul className="flex 2xl:text-[20px]">
-                        <li className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90">
+                        <li
+                            className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg"
+                            onClick={() => scrollTo("about")}
+                        >
                             About me
                         </li>
-                        <li className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90">
+                        <li
+                            className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg"
+                            onClick={() => scrollTo("skills")}
+                        >
                             Skills
                         </li>
-                        <li className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90">
+                        <li
+                            className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg"
+                            onClick={() => scrollTo("work")}
+                        >
                             Work
                         </li>
-                        <li className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90">
+                        <li
+                            className="cursor-pointer px-5 py-2 hover:bg-slate-900 transition active:scale-90 rounded-lg"
+                            onClick={() => scrollTo("contact")}
+                        >
                             Contact
                         </li>
                     </ul>

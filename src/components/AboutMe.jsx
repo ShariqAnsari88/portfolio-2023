@@ -7,7 +7,10 @@ import pe2 from "../assets/sec-2-p-e-2.png";
 
 const AboutMe = () => {
     return (
-        <div className="w-full py-[50px] md:py-[100px] bg-white text-black relative overflow-hidden">
+        <div
+            id="about"
+            className="w-full py-[50px] md:py-[100px] bg-white text-black relative overflow-hidden"
+        >
             {/* BACKGROUND ELEMENTS START */}
             <span className="sec-2-bg-gradient" />
             <img className="sec-2-p-e-1" src={pe1} />

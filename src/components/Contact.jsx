@@ -5,7 +5,10 @@ import Form from "./Form";
 
 const Contact = () => {
     return (
-        <div className="w-full py-[50px] md:py-[100px] bg-[#F2F2F2] relative overflow-hidden">
+        <div
+            id="contact"
+            className="w-full py-[50px] md:py-[100px] bg-[#F2F2F2] relative overflow-hidden"
+        >
             <Wrapper>
                 {/* SECTION HEADING START */}
                 <div className="mb-10 relative">
