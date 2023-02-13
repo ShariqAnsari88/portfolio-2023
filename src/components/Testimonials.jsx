@@ -35,7 +35,7 @@ const Testimonials = () => {
                     <Carousel>
                         {/* SLIDE START */}
                         <div className="text-black flex items-center flex-col px-[25px] md:px-[50px] py-[50px]">
-                            <div className="mb-[25px]">
+                            <div className="mb-[25px] flex flex-col items-center justify-center">
                                 <img
                                     src="https://i.pravatar.cc/300"
                                     className="w-[80px] h-[80px] rounded-full"
@@ -59,7 +59,7 @@ const Testimonials = () => {
                         {/* SLIDE END */}
                         {/* SLIDE START */}
                         <div className="text-black flex items-center flex-col px-[25px] md:px-[50px] py-[50px]">
-                            <div className="mb-[25px]">
+                            <div className="mb-[25px] flex flex-col items-center justify-center">
                                 <img
                                     src="https://i.pravatar.cc/300"
                                     className="w-[80px] h-[80px] rounded-full"
@@ -83,7 +83,7 @@ const Testimonials = () => {
                         {/* SLIDE END */}
                         {/* SLIDE START */}
                         <div className="text-black flex items-center flex-col px-[25px] md:px-[50px] py-[50px]">
-                            <div className="mb-[25px]">
+                            <div className="mb-[25px] flex flex-col items-center justify-center">
                                 <img
                                     src="https://i.pravatar.cc/300"
                                     className="w-[80px] h-[80px] rounded-full"
