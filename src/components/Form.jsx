@@ -1,4 +1,5 @@
 import React from "react";
+import Div from "./Div";
 
 const Form = () => {
     const formSubmitHandler = (e) => {
@@ -6,7 +7,7 @@ const Form = () => {
     };
 
     return (
-        <div className="max-w-[1200px] mx-auto">
+        <Div className="max-w-[1200px] mx-auto">
             <form className="flex flex-col gap-8" onSubmit={formSubmitHandler}>
                 {/* ROW START */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
@@ -14,7 +15,7 @@ const Form = () => {
                     <div className="flex flex-col gap-2">
                         <label
                             htmlFor="name"
-                            className="text-[16px] text-[#888888] uppercase"
+                            className="text-[16px] text-black uppercase"
                         >
                             Your name<sup>*</sup>
                         </label>
@@ -30,7 +31,7 @@ const Form = () => {
                     <div className="flex flex-col gap-2">
                         <label
                             htmlFor="email"
-                            className="text-[16px] text-[#888888] uppercase"
+                            className="text-[16px] text-black uppercase"
                         >
                             Your email<sup>*</sup>
                         </label>
@@ -50,7 +51,7 @@ const Form = () => {
                     <div className="flex flex-col gap-2">
                         <label
                             htmlFor="service"
-                            className="text-[16px] text-[#888888] uppercase"
+                            className="text-[16px] text-black uppercase"
                         >
                             What service you are interested in
                         </label>
@@ -66,7 +67,7 @@ const Form = () => {
                     <div className="flex flex-col gap-2">
                         <label
                             htmlFor="budget"
-                            className="text-[16px] text-[#888888] uppercase"
+                            className="text-[16px] text-black uppercase"
                         >
                             {`Budget range in (usd)`}
                             <sup>*</sup>
@@ -85,7 +86,7 @@ const Form = () => {
                 <div className="flex flex-col gap-2">
                     <label
                         htmlFor="description"
-                        className="text-[16px] text-[#888888] uppercase"
+                        className="text-[16px] text-black uppercase"
                     >
                         {`Budget range in (usd)`}
                         <sup>*</sup>
@@ -103,7 +104,7 @@ const Form = () => {
                 </button>
                 {/* SUBMIT BUTTON */}
             </form>
-        </div>
+        </Div>
     );
 };
 

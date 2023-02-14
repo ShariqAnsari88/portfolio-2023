@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { projects, filters } from "../data";
+import Div from "./Div";
 
 const Portfolio = () => {
     const [selectedTag, setSelectedTag] = useState("all");
@@ -20,7 +21,7 @@ const Portfolio = () => {
     return (
         <div id="work" className="mt-10 relative">
             {/* SECTION HEADING START */}
-            <div className="mb-10">
+            <Div className="mb-10">
                 <div className="flex text-center justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-2">
                     Latest Projects
                 </div>
@@ -28,11 +29,11 @@ const Portfolio = () => {
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                 </div>
-            </div>
+            </Div>
             {/* SECTION HEADING END */}
 
             {/* FILTER TAGS START */}
-            <div className="flex justify-start md:justify-center gap-[10px] mb-[50px] overflow-auto">
+            <Div className="flex justify-start md:justify-center gap-[10px] mb-[50px] overflow-auto">
                 {filters.map((item, index) => (
                     <div
                         key={index}
@@ -46,14 +47,14 @@ const Portfolio = () => {
                         {item.name}
                     </div>
                 ))}
-            </div>
+            </Div>
             {/* FILTER TAGS START */}
 
             {/* PROJECTS GRID START */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {projectData.map((item, index) => {
                     return (
-                        <div
+                        <Div
                             key={index}
                             className="flex flex-col gap-4 cursor-pointer"
                         >
@@ -66,7 +67,7 @@ const Portfolio = () => {
                             <div className="text-[20px] 2xl:text-[34px] text-[#CCCCCC] text-center">
                                 {item.name}
                             </div>
-                        </div>
+                        </Div>
                     );
                 })}
             </div>

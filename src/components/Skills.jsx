@@ -1,10 +1,12 @@
 import React from "react";
+import { motion, useTransform, useScroll } from "framer-motion";
 
 import Wrapper from "./Wrapper";
 import SkillIcon from "./SkillIcon";
 import Service from "./Service";
 import Portfolio from "./Portfolio";
 import Achievements from "./Achievements";
+import Div from "./Div";
 
 // IMAGES
 import sk1 from "../assets/sk-1.png";
@@ -19,18 +21,30 @@ import sk9 from "../assets/sk-9.png";
 import sk10 from "../assets/sk-10.png";
 import sk11 from "../assets/sk-11.png";
 import pattern from "../assets/heading-pattern.png";
+import pe1 from "../assets/sec-3-p-e-1.png";
+import pe2 from "../assets/sec-3-p-e-2.png";
+import pe3 from "../assets/sec-3-p-e-3.png";
 
 const Skills = () => {
+    const { scrollY } = useScroll();
+    const y1 = useTransform(scrollY, [0, 1500], [1000, 0], { clamp: false });
+    const y2 = useTransform(scrollY, [0, 2200], [1500, 0], { clamp: false });
+    const y3 = useTransform(scrollY, [0, 2700], [2000, 0], { clamp: false });
     return (
         <div
             id="skills"
-            className="bg-[#111111] py-[50px] md:py-[100px] relative"
+            className="bg-[#111111] py-[50px] md:py-[100px] relative overflow-hidden md:overflow-visible"
         >
+            {/* BACKGROUND ELEMENTS START */}
             <div className="sec-3-bg-gradient-1" />
             <div className="sec-3-bg-gradient-2" />
+            <motion.img className="sec-3-p-e-1" style={{ y: y1 }} src={pe1} />
+            <motion.img className="sec-3-p-e-2" style={{ y: y2 }} src={pe2} />
+            <motion.img className="sec-3-p-e-3" style={{ y: y3 }} src={pe3} />
+            {/* BACKGROUND ELEMENTS END */}
             <Wrapper>
                 {/* SKILL ICONS START */}
-                <div className="grid grid-cols-4 gap-3 md:grid-cols-11">
+                <Div className="grid grid-cols-4 gap-3 md:grid-cols-11 relative">
                     <SkillIcon path={sk1} />
                     <SkillIcon path={sk2} />
                     <SkillIcon path={sk3} />
@@ -42,11 +56,11 @@ const Skills = () => {
                     <SkillIcon path={sk9} />
                     <SkillIcon path={sk10} />
                     <SkillIcon path={sk11} />
-                </div>
+                </Div>
                 {/* SKILL ICONS END */}
 
                 {/* SERVICES SECTION START */}
-                <div className="flex items-end justify-between flex-wrap-reverse py-[50px] md:py-[100px]">
+                <div className="flex items-end justify-between flex-wrap-reverse py-[50px] md:py-[100px] relative">
                     {/* SERVICES START */}
                     <div className="md:max-w-[65%] flex flex-col gap-6 md:gap-10">
                         <Service

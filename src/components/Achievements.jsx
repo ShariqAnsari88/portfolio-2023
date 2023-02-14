@@ -3,12 +3,13 @@ import React from "react";
 import { achievements } from "../data";
 import NumInc from "./NumInc";
 import dashedCircle from "../assets/dashed-circle.svg";
+import Div from "./Div";
 
 const Achievements = () => {
     return (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-[15px] md:gap-[25px] 2xl:gap-[50px] mt-[75px] md:mt-[150px] relative">
             {achievements.map((item) => (
-                <div
+                <Div
                     key={item.id}
                     className="w-full aspect-square flex justify-center items-center relative bg-[#1A1A1A] md:bg-transparent rounded-[10px]"
                 >
@@ -31,7 +32,7 @@ const Achievements = () => {
                         </div>
                         {/* END */}
                     </div>
-                </div>
+                </Div>
             ))}
         </div>
     );
