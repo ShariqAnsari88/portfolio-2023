@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 import HeroBanner from "./components/HeroBanner";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
@@ -8,10 +6,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-    // useEffect(() => {
-    //     var rellax = new Rellax(".rellax");
-    // }, []);
-
     return (
         <div className="App">
             <HeroBanner />
