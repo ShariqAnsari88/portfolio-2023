@@ -64,7 +64,7 @@ const Portfolio = () => {
                                     className="transition-transform hover:-translate-y-[25%] hover:duration-2500 ease-linear"
                                 />
                             </div>
-                            <div className="text-[20px] 2xl:text-[34px] text-[#CCCCCC] text-center">
+                            <div className="text-[20px] 2xl:text-[24px] text-[#CCCCCC] text-center">
                                 {item.name}
                             </div>
                         </Div>
