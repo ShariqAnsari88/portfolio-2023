@@ -33,7 +33,7 @@ const Skills = () => {
     return (
         <div
             id="skills"
-            className="bg-[#111111] py-[50px] md:py-[100px] relative overflow-hidden md:overflow-visible"
+            className="bg-[#111111] py-[50px] md:py-[100px] relative overflow-hidden"
         >
             {/* BACKGROUND ELEMENTS START */}
             <div className="sec-3-bg-gradient-1" />
