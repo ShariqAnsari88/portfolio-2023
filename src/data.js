@@ -1,13 +1,9 @@
 import p1 from "./assets/project-1.png";
 import p2 from "./assets/project-2.png";
-import p3 from "./assets/project-3.png";
-import p4 from "./assets/project-4.png";
-import p5 from "./assets/project-5.png";
-import p6 from "./assets/project-6.png";
 
 export const filters = [
     {
-        name: "All",
+        name: "Todos",
         id: "all",
     },
     {
@@ -15,67 +11,44 @@ export const filters = [
         id: "dashboard",
     },
     {
-        name: "Mobile App",
-        id: "mobile-app",
+        name: "Web Responsive",
+        id: "responsive",
     },
     {
-        name: "Website",
-        id: "website",
+        name: "Desktop",
+        id: "desktop",
     },
 ];
 
 export const projects = [
     {
-        name: "Join the Innovative Car Wash Service",
-        image: p1,
-        tags: ["dashboard", "mobile-app"],
-    },
-    {
-        name: "Your Luggage is in Safe Hands",
+        name: "CapaciTechKids",
         image: p2,
-        tags: ["dashboard", "website"],
+        url:"https://capacitechkids-production-fe31.up.railway.app",
+        tags: ["dashboard", "responsive","desktop"],
     },
     {
-        name: "The Art of Hiring",
-        image: p3,
-        tags: ["mobile-app"],
-    },
-    {
-        name: "We Are Solving Global Problems",
-        image: p4,
-        tags: ["mobile-app"],
-    },
-    {
-        name: "The English Tea Ceremony",
-        image: p5,
-        tags: ["website", "dashboard"],
-    },
-    {
-        name: "Saving Photo Memories",
-        image: p6,
-        tags: ["website"],
+        name: "Memory Cards",
+        image: p1,
+        url:"https://memory-cards-five.vercel.app",
+        tags: ["desktop"],
     },
 ];
 
 export const achievements = [
     {
         id: 1,
-        year: 80,
-        description: "SUCCESSFULLY<br />COMPLETED<br />PROJECTS",
+        year: 10,
+        description: "PROYECTOS<br />GENIALES<br />COMPLETOS",
     },
     {
         id: 2,
-        year: 15,
-        description: "YEARS OF<br />EXPERIENCE",
+        year: 4,
+        description: "AÑOS DE<br />EXPERIENCIA",
     },
     {
         id: 3,
-        year: 25,
-        description: "TECHNOLOGIES",
-    },
-    {
-        id: 4,
-        year: 70,
-        description: "COMMUNITY<br />POSTS",
+        year: 15,
+        description: "TECNOLOGÍAS<br />UTILIZADAS",
     },
 ];

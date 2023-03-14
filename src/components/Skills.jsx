@@ -65,74 +65,57 @@ const Skills = () => {
                     <div className="md:max-w-[65%] flex flex-col gap-6 md:gap-10">
                         <Service
                             num="1"
-                            title="Ui/Ux Design"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+                            title="Front End Development"
                             data={[
-                                "Prototype",
-                                "Wireframe",
-                                "User Experience",
-                                "Prototype",
-                                "Prototype",
+                                "React",
+                                "Redux",
+                                "CSS",
+                                "HTML",
+                                "Javascript",
                             ]}
                         />
                         <Service
                             num="2"
-                            title="Graphic Designing"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+                            title="Back End Development"                           
                             data={[
-                                "Prototype",
-                                "Wireframe",
-                                "User Experience",
-                                "Prototype",
-                                "Prototype",
+                                "Node.js",
+                                "Express.js",
+                                "Postgress",
+                                "Sequelize",
                             ]}
                         />
                         <Service
                             num="3"
-                            title="Frontend Development"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+                            title="Project Managment"                            
                             data={[
-                                "Prototype",
-                                "Wireframe",
-                                "User Experience",
-                                "Prototype",
-                                "Prototype",
-                            ]}
-                        />
-                        <Service
-                            num="4"
-                            title="Wordpress Development"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
-                            data={[
-                                "Prototype",
-                                "Wireframe",
-                                "User Experience",
-                                "Prototype",
-                                "Prototype",
+                                "MS Project",
+                                "SCRUM",
+                                "Transformación Digital",
+                                "Metodologías Ágiles",
                             ]}
                         />
                     </div>
                     {/* SERVICES END */}
 
                     {/* SECTION HEADING START */}
-                    <div className="flex flex-wrap justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
-                        <span>Solving</span>
-                        <span>Problems</span>
+                    <div className="flex flex-wrap justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[70px] 2xl:text-[90px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
+                        <span>Empatía</span>
+                        <span>Proactivo</span>
                         <span className="flex items-center gap-2">
-                            Through
+                            Creativo
                             <img
                                 src={pattern}
                                 className="block md:hidden w-[80px] mt-1"
                             />
                         </span>
                         <span className="flex items-center gap-4">
-                            Good{" "}
+                            Gestor{" "}
                             <img
                                 src={pattern}
                                 className="hidden md:block md:w-[140px] 2xl:w-[190px] mt-3"
                             />
                         </span>
-                        <span>Services</span>
+                        <span>Sociable</span>
                     </div>
                     {/* SECTION HEADING END */}
                 </div>
